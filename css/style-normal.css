@@ -9,8 +9,8 @@ html, body {
     width: 20%;
     height: 100%;
     position: fixed;
-    /*outline: 1px solid;*/
-    background: #222629;
+    /*background: #222629;*/
+    background: #2c2a2d;
     color: white;
 }
 
@@ -21,14 +21,67 @@ html, body {
 /*Main*/
 #main {
     width: 80%;
-    height: auto;
-    /*outline: 1px solid;*/
     position: absolute;
     right: 0;
-    /*background: blue;*/
+    background-color: #eaefef;
 }
 
-#banner {
+#mainBanner {
     width: 100%;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
 
+#bannerImage {
+    width: 100%;
+}
+
+#bannerText {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    height:50px;
+    color:#fff;
+    font-weight: 100;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#portfolio {
+    margin-top: 2.5%;
+    left: 0;
+    right: 0;
+}
+
+#portfolio img {
+    width:30%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    float: left;
+}
+
+.textDiv {
+    padding: 10%;
+    border-top: groove;
+    border-top-color: #fff;
+    text-align: center;
+}
+
+#about {
+    clear: both;
+}
+
+#contact
+
+h2 {
+    color: #666;
+}
+
+p {
+    color: #9b9c9c;
 }
