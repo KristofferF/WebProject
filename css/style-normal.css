@@ -1,24 +1,51 @@
+/********** UNIVERSAL **********/
 html, body {
     height: 100%;
     margin: 0;
-    font-size: 20px;
 }
 
-/*Menu*/
+h1 {
+    font-weight: 100;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    /*color: #9b9c9c;*/
+    color: #777;
+}
+
+/********** MENU **********/
 #menu {
     width: 20%;
     height: 100%;
     position: fixed;
-    /*background: #222629;*/
     background: #2c2a2d;
-    color: white;
+    color: #777;
+}
+
+#logo{
+    text-align: center;
 }
 
 #headshot {
-    width: 30%;
+    width: 50%;
+    margin-top: 10%;
+    border-radius: 25%;
 }
 
-/*Main*/
+#underTitle{
+    font-size: 1.5em;
+    /*color: white;*/
+}
+
+#nav{
+    
+}
+
+/********** MAIN **********/
 #main {
     width: 80%;
     position: absolute;
@@ -26,7 +53,7 @@ html, body {
     background-color: #eaefef;
 }
 
-#mainBanner {
+#top {
     width: 100%;
     height:auto;
     margin: auto;
@@ -45,11 +72,10 @@ html, body {
     left:0;
     right:0;
     bottom:0;
-    height:50px;
+    height: 1.25em;
     color:#fff;
-    font-weight: 100;
+    font-size: 2.5em;
     background-color: rgba(0,0,0,0.5);
-
 }
 
 #portfolio {
@@ -66,6 +92,7 @@ html, body {
 }
 
 .textDiv {
+    font-size: 1.5em;
     padding: 10%;
     border-top: groove;
     border-top-color: #fff;
@@ -76,12 +103,17 @@ html, body {
     clear: both;
 }
 
-#contact
-
-h2 {
-    color: #666;
+/********** CONTACT **********/
+#contact a{
+    color: #777;
+    text-decoration: underline;
 }
 
-p {
-    color: #9b9c9c;
+#contact a:visited {
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: darkred;
 }
