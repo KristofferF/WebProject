@@ -6,19 +6,21 @@ html, body {
 
 h1 {
     font-weight: 100;
+    color: #eaefef;
 }
 
 h2 {
-    color: #555;
+    color: #22202d;
     font-weight: 100;
 }
 
 h3 {
     font-weight: 100;
+    color: #eaefef;
 }
 
 p {
-    color: #777;
+    color: #50475d;
 }
 
 /********** MENU **********/
@@ -27,7 +29,6 @@ p {
     height: 100%;
     position: fixed;
     background: #22202d;
-    color: white;
 }
 
 #logo{
@@ -40,6 +41,7 @@ p {
     border-radius: 25%;
 }
 
+/********** NAV **********/
 #nav{
     margin-top: 20%;
     text-align: center;
@@ -47,29 +49,25 @@ p {
     display: block;
 }
 
-.link{
+#nav a{
+    display: block;
+    color: #eaefef;
+}
+
+.linkContainer{
     margin-top: 5%;
-    background-color: rgba(0,0,0,0.2);
     height: 2em;
     line-height: 2em;
 }
 
-.link a{
+.linkContainer:hover {
+    background-color: rgba(0,0,0,0.2);
 }
 
-#nav a{
-    color: white;
-    text-decoration: underline;
-}
-
-#nav a:visited {
-    text-decoration: underline;
-}
-
-#nav a:hover {
+.linkContainer:hover .link{
     text-decoration: none;
-    color: darkred;
 }
+
 
 
 /********** MAIN **********/
@@ -80,7 +78,7 @@ p {
     background-color: #eaefef;
 }
 
-#top {
+#banner {
     width: 100%;
     height:auto;
     margin: auto;
@@ -100,11 +98,19 @@ p {
     right:0;
     bottom:0;
     height: 1.25em;
-    color:#fff;
     font-size: 2.5em;
     background-color: rgba(0,0,0,0.5);
 }
 
+.textDiv {
+    font-size: 1.5em;
+    padding: 10%;
+    border-top: groove;
+    border-top-color: #fff;
+    text-align: center;
+}
+
+/********** PORTFOLIO **********/
 #portfolio {
     margin-top: 2.5%;
     left: 0;
@@ -118,29 +124,18 @@ p {
     float: left;
 }
 
-.textDiv {
-    font-size: 1.5em;
-    padding: 10%;
-    border-top: groove;
-    border-top-color: #fff;
-    text-align: center;
-}
-
+/********** ABOUT **********/
 #about {
     clear: both;
 }
 
 /********** CONTACT **********/
 #contact a{
-    color: #777;
-    text-decoration: underline;
-}
-
-#contact a:visited {
+    color: #50475d;
     text-decoration: underline;
 }
 
 #contact a:hover {
     text-decoration: none;
-    color: darkred;
+    color: #22202d;
 }

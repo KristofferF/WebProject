@@ -3,74 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style-normal.css">
-    <title></title>
+    <title>Portfolio Kristoffer Freiholtz</title>
+    <script src="js/js-normal.js"></script>
 </head>
 
 <!-- Header -->
 <header id="menu">
-        <!-- Logo Headshot -->
-        <div id="logo">
-            <img src="images/headshot.jpg" alt="Headshot" id="headshot"/>
-            <h1 id="title">Kristoffer Freiholtz</h1>
-            <h3 id="underTitle">Software Developer</h3>
-        </div>
+    <!-- Logo Headshot -->
+    <div id="logo">
+        <img src="images/headshot.jpg" alt="Headshot" id="headshot"/>
+        <h1 id="title">Kristoffer Freiholtz</h1>
+        <h3 id="underTitle">Software Developer</h3>
+    </div>
 
-        <!-- Nav -->
-        <nav id="nav">
-            <!--<ul>-->
-                <!--<li><a href="#top" id="top-link">Intro</a></li>-->
-                <!--<li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>-->
-                <!--<li><a href="#about" id="about-link">About Me</a></li>-->
-                <!--<li><a href="#contact" id="contact-link">Contact</a></li>-->
-            <!--</ul>-->
-                <div class="link"><a href="#top" id="top-link">Intro</a></div>
-                <div class="link"><a href="#portfolio" id="portfolio-link">Portfolio</a></div>
-                <div class="link"><a href="#about" id="about-link">About Me</a></div>
-                <div class="link"><a href="#contact" id="contact-link">Contact</a></div>
-        </nav>
+    <!-- Nav -->
+    <nav id="nav">
+        <div class="linkContainer"><a href="#top" class="link" id="top-link">Intro</a></div>
+        <div class="linkContainer"><a href="#portfolio" class="link" id="portfolio-link">Portfolio</a></div>
+        <div class="linkContainer"><a href="#about" class="link" id="about-link">About Me</a></div>
+        <div class="linkContainer"><a href="#contact" class="link" id="contact-link">Contact</a></div>
+    </nav>
 </header>
 
 <body>
-
     <div id="main">
-
-        <div id="top">
+        <!-- Banner -->
+        <div id="banner">
             <img src="images/banner.jpg" alt="Banner Image" id="bannerImage"/>
             <h1 id="bannerText">Hi! I'm Kristoffer and this is my portfolio!</h1>
         </div>
 
+        <!-- Portfolio -->
         <div id="portfolio">
-            <a href="https://github.com/KristofferF/DrawIt" class="portfolioImages"><img src="images/portfolio-drawit.jpg" alt="Draw It" /></a>
-            <a href="https://github.com/KristofferF/ImageAnalyzer" class="portfolioImages"><img src="images/portfolio-imageanalyzer.jpg" alt="Image Analyzer" /></a>
-            <a href="https://github.com/KristofferF/MyWishList" class="portfolioImages"><img src="images/portfolio-wishlist.jpg" alt="My Wishlist" /></a>
-            <a href="https://github.com/KristofferF/SudokuHelper" class="portfolioImages"><img src="images/portfolio-sudokuhelper.jpg" alt="Sudoku Helper" /></a>
-            <a href="http://www.greenfoot.org/scenarios/12601" class="portfolioImages"><img src="images/portfolio-night.jpg" alt="The Night" /></a>
+            <a href="https://github.com/KristofferF/DrawIt" target="_blank"><img src="images/portfolio-drawit.jpg" alt="Draw It" /></a>
+            <a href="javascript:AlertEmptyProject();"><img src="images/portfolio-imageanalyzer.jpg" alt="Image Analyzer" /></a>
+            <a href="https://github.com/KristofferF/MyWishList" target="_blank"><img src="images/portfolio-wishlist.jpg" alt="My Wishlist" /></a>
+            <a href="https://github.com/KristofferF/SudokuHelper" target="_blank"><img src="images/portfolio-sudokuhelper.jpg" alt="Sudoku Helper" /></a>
+            <a href="http://www.greenfoot.org/scenarios/12601" target="_blank"><img src="images/portfolio-night.jpg" alt="The Night" /></a>
         </div>
 
+        <!-- About -->
         <div class="textDiv" id="about">
             <h2>About Me</h2>
             <p>I'm a engineer who has a passion for software development. <br>
                 Whether it's mobile apps, desktop apps, embedded systems or games. <br>
                 I'm currently employed as a software developer but I'm looking for <br>
-                smaller projects to work with on my spare time </p>
+                smaller projects to work with on my spare time.</p>
         </div>
 
+        <!-- Contact -->
         <div class="textDiv" id="contact">
             <h2>Contact</h2>
-
             <p>if you wish to contact me you can reach me on my mobile or email. <br>
                 More information about my education and career is found in my CV.</p>
-
-            <!--<div class="contact-info">-->
-                <a href="tel:076-1914424">Mobile</a>
-                <a href="mailto:Kristoffer.Freiholtz@hotmail.com">Email</a>
-                <a href="CV.pdf">CV</a>
-            <!--</div>-->
+            <a href="tel:076-1914424">Mobile</a>
+            <a href="mailto:Kristoffer.Freiholtz@hotmail.com">Email</a>
+            <a href="CV.pdf">CV</a>
         </div>
-
     </div>
-
-
 
 </body>
 </html>
