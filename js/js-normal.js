@@ -4,28 +4,29 @@ function AlertEmptyProject() {
 
 function clickMe(){
     var number = Math.floor(Math.random() * 100) + 0;
-    var answer = prompt("Guess a number between 0-100");
-    if (answer != null && (answer >= 0 || answer <= 100)) {
-
-        document.getElementById("demo").innerHTML =
-            "Hello " + person + "! How are you today?";
+    var answer = prompt("Guess a number between 0-100.\nPress cancel or type nothing to quit!");
+    var loop = true;
+    while(loop){
+        if (answer === ""){
+            loop = false
+        }
+        else if(answer == number){
+            loop = false;
+            var playAgain = confirm("Great you guessed the right number!\nDo you want to play again?");
+            if (playAgain == true) {
+                loop = true;
+                number = Math.floor(Math.random() * 100) + 0;
+                answer = prompt("Guess a number between 0-100.\nPress cancel or type nothing to quit!");
+            }
+        }
+        else if (answer > number && answer <= 100) {
+            answer = prompt("You guessed to high. Guess again.");
+        }
+        else if (answer < number && answer >= 0) {
+            answer = prompt("You guessed to low. Guess again.");
+        }
+        else{
+            answer = prompt("Guess a number between 0-100.\nPress cancel or type nothing to quit!");
+        }
     }
-    //var lightbox = document.getElementById("lightbox"),
-    //    dimmer = document.createElement("div");
-    //
-    //dimmer.style.width =  window.innerWidth + 'px';
-    //dimmer.style.height = window.innerHeight + 'px';
-    //dimmer.className = 'dimmer';
-    //
-    //dimmer.onclick = function(){
-    //    document.body.removeChild(this);
-    //    lightbox.style.visibility = 'hidden';
-    //}
-    //
-    //document.body.appendChild(dimmer);
-    //
-    //lightbox.style.visibility = 'visible';
-    //lightbox.style.top = window.innerHeight/2 - 50 + 'px';
-    //lightbox.style.left = window.innerWidth/2 - 100 + 'px';
-    //return false;
 }
