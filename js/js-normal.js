@@ -2,12 +2,12 @@ function AlertEmptyProject() {
     alert("Sorry this project is currently unavailable");
 }
 
-function clickMe(){
+function guessGame(){
     var number = Math.floor(Math.random() * 100) + 0;
     var answer = prompt("Guess a number between 0-100.\nPress cancel or type nothing to quit!");
     var loop = true;
     while(loop){
-        if (answer === ""){
+        if (answer === "" || answer === null){
             loop = false
         }
         else if(answer == number){
