@@ -69,8 +69,6 @@ p {
     text-decoration: none;
 }
 
-
-
 /********** MAIN **********/
 #main {
     width: 80%;
@@ -124,6 +122,13 @@ p {
     margin-left: 2.5%;
     float: left;
 }
+
+/********** JAVASCRIPT DISABLED **********/
+.noJavaScript .jsDisabled {
+    visibility: hidden;
+}
+
+
 
 /********** ABOUT **********/
 #about {

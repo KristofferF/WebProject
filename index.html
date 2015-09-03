@@ -5,9 +5,15 @@
     <link rel="stylesheet" type="text/css" href="css/style-normal.css">
     <title>Portfolio Kristoffer Freiholtz</title>
     <script src="js/js-normal.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
 </head>
 
-<body>
+<body class="noJavaScript">
+    <!-- removes javascript portfolio obejcts when javascript isn't available-->
+    <script>
+        $("body").removeClass("noJavaScript");
+    </script>
+
     <!-- Header -->
     <header id="menu">
         <!-- Logo Headshot -->
@@ -36,12 +42,13 @@
         <!-- Portfolio -->
         <div id="portfolio">
             <a href="https://github.com/KristofferF/DrawIt" target="_blank" title="Draw It"><img src="images/portfolio-drawit.jpg" alt="Draw It" /></a>
-            <a href="javascript:AlertEmptyProject();" title="Image Analyzer"><img src="images/portfolio-imageanalyzer.jpg" alt="Image Analyzer" /></a>
+            <a href="javascript:AlertEmptyProject();" title="Image Analyzer" class="jsDisabled"><img src="images/portfolio-imageanalyzer.jpg" alt="Image Analyzer" /></a>
             <a href="https://github.com/KristofferF/MyWishList" target="_blank" title="My Wishlist"><img src="images/portfolio-wishlist.jpg" alt="My Wishlist" /></a>
             <a href="https://github.com/KristofferF/SudokuHelper" target="_blank" title="Sudoku Helper"><img src="images/portfolio-sudokuhelper.jpg" alt="Sudoku Helper" /></a>
             <a href="http://www.greenfoot.org/scenarios/12601" target="_blank" title="The Night"><img src="images/portfolio-night.jpg" alt="The Night" /></a>
-            <a href="javascript:guessGame()" title="Guessing Game"><img src="images/portfolio-Guess.jpg" alt="Guess Game" /></a>
+            <a href="javascript:guessGame()" title="Guessing Game" class="jsDisabled"><img src="images/portfolio-Guess.jpg" alt="Guess Game" /></a>
         </div>
+
 
         <!-- About -->
         <div class="textDiv" id="about">
